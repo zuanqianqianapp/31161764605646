@@ -42,16 +42,15 @@
 
 <script>
 	var u = navigator.userAgent;
-    $(".wx_box").show();
 		if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) {//安卓手机
 			$(".andiord").show();
 			$(".ios").hide();
-			//$(".wx_box").hide();
+			$(".wx_box").hide();
             $(".ios-tip").hide();
 		} else if (u.indexOf('iPhone') > -1) {//苹果手机
 			$(".andiord").hide();
 			$(".ios").show();
-			//$(".wx_box").hide();
+			$(".wx_box").hide();
             $(".ios-tip").show();
 
 		} else if (u.indexOf('Windows Phone') > -1) {//winphone手机
